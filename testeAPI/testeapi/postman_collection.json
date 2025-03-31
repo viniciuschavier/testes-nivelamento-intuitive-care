@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "eedcfe61-9857-45ef-ae5e-1f2cf7ba4cc8",
+		"name": "Teste API Intuitive Care",
+		"description": "Realiza a busca de operadoras do arquivo csv atraves de qualquer palavras chaves. Retorna todos os registros que contém o que foi digitado.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43597106",
+		"_collection_link": "https://viniciuschavier.postman.co/workspace/Vinicius-Chavier's-Workspace~dd2d9508-75da-431e-8a7e-33fd6d760766/collection/43597106-eedcfe61-9857-45ef-ae5e-1f2cf7ba4cc8?action=share&source=collection_link&creator=43597106"
+	},
+	"item": [
+		{
+			"name": "Busca atraves do nome",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/buscar_operadoras?termo=18 DE JULHO ADMINISTRADORA DE BENEFÍCIOS LTDA",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"buscar_operadoras"
+					],
+					"query": [
+						{
+							"key": "termo",
+							"value": "18 DE JULHO ADMINISTRADORA DE BENEFÍCIOS LTDA"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busca atraves de registro ans",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/buscar_operadoras?termo=424242",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"buscar_operadoras"
+					],
+					"query": [
+						{
+							"key": "termo",
+							"value": "424242"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busca atraves do uf",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/buscar_operadoras?termo=sp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"buscar_operadoras"
+					],
+					"query": [
+						{
+							"key": "termo",
+							"value": "sp"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Exemplo de erro caso nao encontre resultados",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/buscar_operadoras?termo=exemplotermoinvalido",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"buscar_operadoras"
+					],
+					"query": [
+						{
+							"key": "termo",
+							"value": "exemplotermoinvalido"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
