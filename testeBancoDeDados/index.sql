@@ -41,28 +41,28 @@ CREATE TABLE demonstracoes_contabeis (
 );
 
 -- Script para importar os dados dos arquivos dos ultimos 2 anos do repositorio para a tabela demonstracoes_contabeis
-\copy operadoras(data, reg_ans, cd_conta_contabil, descricao, vl_saldo_inicial, vl_saldo_final)
+\copy demonstracoes_contabeis(data, reg_ans, cd_conta_contabil, descricao, vl_saldo_inicial, vl_saldo_final)
 FROM 'C:\Users\Vinicius\Downloads\1T2023\1T2023.csv' DELIMITER ';' CSV HEADER ENCODING 'UTF-8';
 
-\copy operadoras(data, reg_ans, cd_conta_contabil, descricao, vl_saldo_inicial, vl_saldo_final)
+\copy demonstracoes_contabeis(data, reg_ans, cd_conta_contabil, descricao, vl_saldo_inicial, vl_saldo_final)
 FROM 'C:\Users\Vinicius\Downloads\2T2023\2T2023.csv' DELIMITER ';' CSV HEADER ENCODING 'UTF-8';
 
-\copy operadoras(data, reg_ans, cd_conta_contabil, descricao, vl_saldo_inicial, vl_saldo_final)
+\copy demonstracoes_contabeis(data, reg_ans, cd_conta_contabil, descricao, vl_saldo_inicial, vl_saldo_final)
 FROM 'C:\Users\Vinicius\Downloads\3T2023\3T2023.csv' DELIMITER ';' CSV HEADER ENCODING 'UTF-8';
 
-\copy operadoras(data, reg_ans, cd_conta_contabil, descricao, vl_saldo_inicial, vl_saldo_final)
+\copy demonstracoes_contabeis(data, reg_ans, cd_conta_contabil, descricao, vl_saldo_inicial, vl_saldo_final)
 FROM 'C:\Users\Vinicius\Downloads\4T2023\4T2023.csv' DELIMITER ';' CSV HEADER ENCODING 'UTF-8';
 
-\copy operadoras(data, reg_ans, cd_conta_contabil, descricao, vl_saldo_inicial, vl_saldo_final)
+\copy demonstracoes_contabeis(data, reg_ans, cd_conta_contabil, descricao, vl_saldo_inicial, vl_saldo_final)
 FROM 'C:\Users\Vinicius\Downloads\1T2024\1T2024.csv' DELIMITER ';' CSV HEADER ENCODING 'UTF-8';
 
-\copy operadoras(data, reg_ans, cd_conta_contabil, descricao, vl_saldo_inicial, vl_saldo_final)
+\copy demonstracoes_contabeis(data, reg_ans, cd_conta_contabil, descricao, vl_saldo_inicial, vl_saldo_final)
 FROM 'C:\Users\Vinicius\Downloads\2T2024\2T2024.csv' DELIMITER ';' CSV HEADER ENCODING 'UTF-8';
 
-\copy operadoras(data, reg_ans, cd_conta_contabil, descricao, vl_saldo_inicial, vl_saldo_final)
+\copy demonstracoes_contabeis(data, reg_ans, cd_conta_contabil, descricao, vl_saldo_inicial, vl_saldo_final)
 FROM 'C:\Users\Vinicius\Downloads\3T2024\3T2024.csv' DELIMITER ';' CSV HEADER ENCODING 'UTF-8';
 
-\copy operadoras(data, reg_ans, cd_conta_contabil, descricao, vl_saldo_inicial, vl_saldo_final)
+\copy demonstracoes_contabeis(data, reg_ans, cd_conta_contabil, descricao, vl_saldo_inicial, vl_saldo_final)
 FROM 'C:\Users\Vinicius\Downloads\4T2024\4T2024.csv' DELIMITER ';' CSV HEADER ENCODING 'UTF-8';
 
 -- Script para alterar o tipo dos dados da coluna vl_saldo_inicial e vl_saldo_final criado anteriormente como TEXT.
