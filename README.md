@@ -67,7 +67,7 @@ Inclui scripts **SQL** para criar e estruturar tabelas no **PostgreSQL**, import
 ### **4️⃣ Teste de API**
 Desenvolvimento de uma interface web usando **Vue.js** e um backend em **Python** para consulta de operadoras de planos de saúde. A API contém uma rota para busca textual nos cadastros.
 
-📌 Mais detalhes: [`TesteAPI/README.md`](testeAPI/README.md)
+📌 Mais detalhes: [`TesteAPI/README.md`](testeAPI/testeapi/README.md)
 
 ## 🚀 Como Executar o Projeto
 
